@@ -94,8 +94,8 @@ const Signup = () => {
           style={{ color: "rgba(0, 0, 0, 0.7)", fontSize: "16px" }}
         >
           Password
-          <a
-            href="/forgot-password"
+          <Link
+            href="/forget-password"
             className="hover:underline"
             style={{
               color: "rgba(0, 0, 0, 1)",
@@ -105,7 +105,7 @@ const Signup = () => {
             }}
           >
             Forgot Password?
-          </a>
+          </Link>
         </label>
         <input
           type="password"
