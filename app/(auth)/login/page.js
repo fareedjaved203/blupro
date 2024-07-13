@@ -100,7 +100,7 @@ const Login = () => {
         <div className="w-full mt-4">
           <BlueBtn title={"Login"} />
           <div className="text-center mt-4">
-            Don’t have an account? <b>Register here!</b>
+            Don&#39;t have an account? <b>Register here!</b>
           </div>
 
           <div class="my-6 text-center">
