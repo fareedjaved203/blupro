@@ -26,14 +26,15 @@ const Login = () => {
               fontWeight: 800,
               fontSize: "32.36px",
               lineHeight: "35.6px",
+              color: "#333333",
             }}
           >
             Sign in
           </div>
           <div
-            className="my-3 pt-4"
+            className="pt-2"
             style={{
-              color: "rgba(0, 0, 0, 0.5)",
+              color: "##828282",
               fontSize: "16px",
               lineHeight: "22px",
               letterSpacing: "3%",

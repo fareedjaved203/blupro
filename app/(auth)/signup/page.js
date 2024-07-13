@@ -12,7 +12,7 @@ const Signup = () => {
   const [loading, setLoading] = useState(false);
   return (
     <>
-      <div className="mb-4">
+      <div className="lg:mt-24 xl:mt-18">
         <div className="text-2xl mb-4 flex items-center flex-col space-y-1">
           <Image
             src="/hands.svg"
@@ -27,14 +27,15 @@ const Signup = () => {
               fontWeight: 800,
               fontSize: "32.36px",
               lineHeight: "35.6px",
+              color: "#333333",
             }}
           >
-            Sign in
+            Sign up
           </div>
           <div
-            className="my-3 pt-4"
+            className="pt-2"
             style={{
-              color: "rgba(0, 0, 0, 0.5)",
+              color: "##828282",
               fontSize: "16px",
               lineHeight: "22px",
               letterSpacing: "3%",
@@ -62,7 +63,7 @@ const Signup = () => {
           className="w-full pl-2 rounded login-input"
           style={{
             backgroundColor: "rgba(76, 73, 237, 0.1)",
-            height: "46px",
+            height: "60px",
           }}
         />
 
@@ -83,7 +84,7 @@ const Signup = () => {
           className="w-full pl-2 rounded login-input"
           style={{
             backgroundColor: "rgba(76, 73, 237, 0.1)",
-            height: "46px",
+            height: "60px",
           }}
         />
 
@@ -116,7 +117,7 @@ const Signup = () => {
           className="w-full pl-2 rounded login-input"
           style={{
             backgroundColor: "rgba(76, 73, 237, 0.1)",
-            height: "46px",
+            height: "60px",
           }}
         />
 
