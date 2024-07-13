@@ -62,7 +62,7 @@ const Login = () => {
           className="w-full pl-2 rounded login-input"
           style={{
             backgroundColor: "rgba(76, 73, 237, 0.1)",
-            height: "46px",
+            height: "60px",
           }}
         />
 
@@ -95,7 +95,7 @@ const Login = () => {
           className="w-full pl-2 rounded login-input"
           style={{
             backgroundColor: "rgba(76, 73, 237, 0.1)",
-            height: "46px",
+            height: "60px",
           }}
         />
 
