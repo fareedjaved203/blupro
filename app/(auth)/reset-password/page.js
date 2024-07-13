@@ -14,7 +14,7 @@ const ResetPassword = () => {
       <div className="mb-4">
         <div className="text-2xl mb-4 flex items-center flex-col space-y-1">
           <Image
-            src="/hands.svg"
+            src="/lock.svg"
             width={100}
             height={100}
             alt="logo icon"
