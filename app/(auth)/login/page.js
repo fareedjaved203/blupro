@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import BlueBtn from "@/components/shared/auth/BlueBtn";
 import { GoogleBtn } from "@/components/shared/GoogleBtn";
+import Link from "next/link";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -100,7 +101,10 @@ const Login = () => {
         <div className="w-full mt-4">
           <BlueBtn title={"Login"} />
           <div className="text-center mt-4">
-            Don&#39;t have an account? <b>Register here!</b>
+            Don&#39;t have an account?{" "}
+            <b>
+              <Link href={"/signup"}>Register here!</Link>
+            </b>
           </div>
 
           <div class="my-6 text-center">
