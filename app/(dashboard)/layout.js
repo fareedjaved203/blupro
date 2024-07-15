@@ -25,10 +25,11 @@ const DashboardLayout = ({ children }) => {
           </div>
           <Search />
           <div
-            className="flex flex-col flex-1 justify-between md:min-h-[120vh]"
+            className="flex flex-col flex-1 justify-between min-h-screen"
             style={{ fontSize: "15px" }}
           >
             <Sidebar />
+            <hr className="h-0.5 my-4 bg-black" />
             <LogoutBtn />
           </div>
         </div>
