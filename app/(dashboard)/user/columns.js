@@ -66,7 +66,7 @@ export const columns = [
             />
             <DetailsModal data={row?.original} />
             <hr
-              className="pt-2 border-t-1 block w-full"
+              className="pt-2 border-t-1 block w-full "
               style={{ borderColor: "#CCCCCD" }}
             />
             <Button className="bg-[#E7E7E7] w-full rounded-md mb-2 text-black hover:text-white">

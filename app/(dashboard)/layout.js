@@ -13,7 +13,7 @@ const DashboardLayout = ({ children }) => {
     <>
       <div className="flex h-[100vh] font-mulish ">
         {/* <!-- sidebar --> */}
-        <div className="hidden md:flex flex-col space-y-1 xl:w-78 bg-white text-sm md:fixed z-10 h-full px-6">
+        <div className="hidden md:flex flex-col space-y-1 xl:w-78 bg-white text-sm md:fixed z-10 h-full px-6 overflow-y-auto">
           <div className="w-full flex justify-center items-center">
             <Image
               src={`/logo.svg`}
@@ -25,7 +25,7 @@ const DashboardLayout = ({ children }) => {
           </div>
           <Search />
           <div
-            className="flex flex-col flex-1 overflow-y-auto justify-between"
+            className="flex flex-col flex-1 justify-between md:min-h-screen xl:min-h-[70vh]"
             style={{ fontSize: "15px" }}
           >
             <Sidebar />
