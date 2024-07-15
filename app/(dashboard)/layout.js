@@ -13,7 +13,7 @@ const DashboardLayout = ({ children }) => {
     <>
       <div className="flex h-[100vh] font-mulish ">
         {/* <!-- sidebar --> */}
-        <div className="hidden md:flex flex-col space-y-2 xl:w-78 bg-white text-sm md:fixed z-10 h-full px-6">
+        <div className="hidden md:flex flex-col space-y-1 xl:w-78 bg-white text-sm md:fixed z-10 h-full px-6">
           <div className="w-full flex justify-center items-center">
             <Image
               src={`/logo.svg`}
@@ -58,7 +58,7 @@ const DashboardLayout = ({ children }) => {
               </div>
             </div>
           </div>
-          <div className="p-4 pb-0 content-body md:ml-80 bg-[#FAFCFF] border-l border-t">
+          <div className="p-4 pb-0 min-h-screen md:ml-80 bg-[#FAFCFF] border-l border-t">
             {children}
           </div>
         </div>
