@@ -151,30 +151,29 @@ async function User({ searchParams }) {
   const { data, pagination } = await jobSeekers(page);
 
   return (
-    <div
-      className="container mx-auto py-7 rounded-xl pl-6 mb-4"
-      style={{ backgroundColor: "white" }}
-    >
-      <div className="flex justify-between items-center pb-8">
-        <div
-          className="font-mulish"
-          style={{ fontSize: "28px", fontWeight: "900" }}
-        >
-          Users
+    <div className="" style={{ backgroundColor: "white" }}>
+      <div className="border rounded-xl py-7 mb-4 pl-6">
+        <div className="flex justify-between items-center pb-8">
+          <div
+            className="font-mulish"
+            style={{ fontSize: "28px", fontWeight: "900" }}
+          >
+            Users
+          </div>
+          <div className="">
+            <Search />
+          </div>
+          <div className="bg-[#38B6FF1A] p-2 rounded-md mr-4">
+            <CiFilter size={36} />
+          </div>
         </div>
-        <div className="">
-          <Search />
-        </div>
-        <div>
-          <CiFilter size={36} />
-        </div>
+        <DataTable
+          columns={columns}
+          data={data}
+          pagination={pagination}
+          title={"Total Users"}
+        />
       </div>
-      <DataTable
-        columns={columns}
-        data={data}
-        pagination={pagination}
-        title={"Total Users"}
-      />
     </div>
   );
 }

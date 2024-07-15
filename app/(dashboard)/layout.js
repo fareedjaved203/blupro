@@ -35,7 +35,7 @@ const DashboardLayout = ({ children }) => {
 
         {/* <!-- Main content --> */}
         <div className="flex flex-col flex-1 max-w-full">
-          <div className="flex items-center justify-between h-16 bg-white md:px-10 pt-2">
+          <div className="flex items-center justify-between h-16 bg-white md:px-10 py-2">
             <div className="flex items-center px-4">
               <HamBurgerMenu />
             </div>
@@ -58,7 +58,9 @@ const DashboardLayout = ({ children }) => {
               </div>
             </div>
           </div>
-          <div className="p-4 pb-0 content-body md:ml-80">{children}</div>
+          <div className="p-4 pb-0 content-body md:ml-80 bg-[#FAFCFF] border-l border-t">
+            {children}
+          </div>
         </div>
       </div>
     </>

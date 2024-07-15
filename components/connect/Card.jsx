@@ -16,7 +16,10 @@ import { HiDotsVertical } from "react-icons/hi";
 
 const Card = () => {
   return (
-    <div className="p-4 shadow-xl rounded-xl">
+    <div
+      className="p-4 rounded-xl"
+      style={{ boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.1)" }}
+    >
       <div
         class="w-full flex flex-col md:flex-row rounded-xl"
         style={{ height: "260px" }}
