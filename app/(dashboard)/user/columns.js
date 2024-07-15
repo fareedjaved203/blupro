@@ -69,12 +69,26 @@ export const columns = [
               className="pt-2 border-t-1 block w-full"
               style={{ borderColor: "#CCCCCD" }}
             />
+            <Button className="bg-[#E7E7E7] w-full rounded-md mb-2 text-black hover:text-white">
+              Send Blu Points
+            </Button>
+            <hr
+              className="pt-2 border-t-1 block w-full"
+              style={{ borderColor: "#CCCCCD" }}
+            />
+            <Button className="bg-[#E7E7E7] w-full rounded-md mb-2 text-black hover:text-white">
+              View Claimed Rewards
+            </Button>
+            <hr
+              className="pt-2 border-t-1 block w-full"
+              style={{ borderColor: "#CCCCCD" }}
+            />
             <Button
               className="bg-[#D3175233] w-full rounded-md mb-2"
               style={{ color: "#D31752" }}
               onClick={() => removeJob(row.original?.id)}
             >
-              Delete User
+              Block User
             </Button>
           </DropdownMenuContent>
         </DropdownMenu>
