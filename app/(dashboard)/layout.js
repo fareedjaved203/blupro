@@ -25,7 +25,7 @@ const DashboardLayout = ({ children }) => {
           </div>
           <Search />
           <div
-            className="flex flex-col flex-1 justify-between md:min-h-screen xl:min-h-[70vh]"
+            className="flex flex-col flex-1 justify-between md:min-h-[120vh]"
             style={{ fontSize: "15px" }}
           >
             <Sidebar />

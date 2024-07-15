@@ -33,7 +33,7 @@ const Card = () => {
             className="rounded-xl cover"
           />
         </div>
-        <div class="px-4 py-2 flex flex-col justify-between">
+        <div class="px-4 flex flex-col justify-between">
           <div class="space-y-1">
             <div className="flex justify-between items-center">
               <div class="text-xs text-[#38B6FF] flex items-center">
@@ -73,11 +73,11 @@ const Card = () => {
               Join a thriving community of professional and aspiring live
               streamers and creators...
             </div>
-          </div>
-          <div className="text-[#38B6FF] w-full flex justify-end">
-            <button className="border-2 border-[#38B6FF] flex items-center rounded-md px-3 py-1">
-              View <AiOutlineRight size={20} />
-            </button>
+            <div className="text-[#38B6FF] w-full flex justify-end">
+              <button className="border-2 border-[#38B6FF] flex items-center rounded-md px-3 py-1">
+                View <AiOutlineRight size={20} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
