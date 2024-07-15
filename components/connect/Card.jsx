@@ -24,11 +24,11 @@ const Card = () => {
         class="w-full flex flex-col md:flex-row rounded-xl"
         style={{ height: "260px" }}
       >
-        <div className="py-4 rounded-xl">
+        <div className="relative py-2 rounded-xl overflow-hidden">
           <Image
             src={"https://tailwindcss.com/img/card-left.jpg"}
             width={500}
-            height={200}
+            height={500}
             alt="cover"
             className="rounded-xl cover"
           />
