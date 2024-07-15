@@ -42,7 +42,7 @@ const DashboardLayout = ({ children }) => {
             </div>
             <div className="flex items-center pr-4 text-black space-x-8">
               <NotificationBadge />
-              <div className="flex space-x-1 items-center">
+              <div className="flex space-x-1 items-center bg-[#F2F2F2] rounded-full p-2">
                 <MdLanguage size={32} />
                 <div>EN</div>
                 <div>|</div>
