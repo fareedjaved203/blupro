@@ -4,6 +4,9 @@ import Image from "next/image";
 import Sidebar from "@/components/shared/Sidebar";
 import LogoutBtn from "@/components/shared/LogoutBtn";
 import HamBurgerMenu from "@/components/shared/HamBurgerMenu";
+import NotificationBadge from "@/components/shared/navbar/NotificationBadge";
+import { MdLanguage } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 
 const DashboardLayout = ({ children }) => {
   return (
@@ -22,7 +25,7 @@ const DashboardLayout = ({ children }) => {
           </div>
           <Search />
           <div
-            className="flex flex-col flex-1 overflow-y-auto justify-between h-full"
+            className="flex flex-col flex-1 overflow-y-auto justify-between"
             style={{ fontSize: "15px" }}
           >
             <Sidebar />
@@ -31,33 +34,28 @@ const DashboardLayout = ({ children }) => {
         </div>
 
         {/* <!-- Main content --> */}
-        <div className="flex flex-col flex-1 max-w-full ">
-          <div className="flex items-center justify-between h-16 bg-white">
+        <div className="flex flex-col flex-1 max-w-full">
+          <div className="flex items-center justify-between h-16 bg-white md:px-10 pt-2">
             <div className="flex items-center px-4">
               <HamBurgerMenu />
-              {/* <span className="hidden md:block md:ml-64">
-                <CurrentDate />
-              </span> */}
             </div>
-            <div className="flex items-center pr-4 text-black">
-              <span
-                className="mr-4"
-                style={{
-                  fontSize: "16px",
-                  fontWeight: 500,
-                  paddingRight: "5px",
-                }}
-              >
-                Admin
-              </span>
-              {/* <Image
-                src={"/Rectangle 338.svg"}
-                width={65}
-                height={65}
-                alt="logo icon"
-                className="w-12 h-12 rounded-lg p-1"
-                priority={false}
-              /> */}
+            <div className="flex items-center pr-4 text-black space-x-8">
+              <NotificationBadge />
+              <div className="flex space-x-1 items-center">
+                <MdLanguage size={32} />
+                <div>EN</div>
+                <div>|</div>
+                <div>USD</div>
+              </div>
+              <div className="flex border border-4 border-black rounded-full p-1 justify-center items-center space-x-1">
+                <Image
+                  src={"/profile.svg"}
+                  width={32}
+                  height={32}
+                  alt="profile"
+                />
+                <IoIosArrowDown size={20} />
+              </div>
             </div>
           </div>
           <div className="p-4 pb-0 content-body md:ml-80">{children}</div>

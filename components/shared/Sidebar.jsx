@@ -3,6 +3,12 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { BiSolidDashboard } from "react-icons/bi";
 import { usePathname } from "next/navigation";
+import { PiUsersThree } from "react-icons/pi";
+import { RiHome5Line } from "react-icons/ri";
+import { MdOutlineInventory2 } from "react-icons/md";
+import { MdOutlineLiveTv } from "react-icons/md";
+import { LiaHandshake } from "react-icons/lia";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const pathname = usePathname();
@@ -17,16 +23,16 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <nav className="xl:flex-1 bg-white lg:h-80  overflow-auto">
+    <nav className="xl:flex-1 bg-white">
       <Link
-        href="/dashboard"
+        href="/"
         className={`flex items-center px-4 py-4 mt-4 justify-start font-bold rounded-md hover:bg-[#38B6FF] hover:text-white ${
           activeLink === "dashboard" ? "bg-[#38B6FF] text-white" : ""
         }`}
-        onClick={() => handleLinkClick("dashboard")}
+        onClick={() => handleLinkClick("")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <RiHome5Line className="text-2xl mr-3" />
         Dashboard
       </Link>
 
@@ -38,7 +44,7 @@ const Sidebar = () => {
         onClick={() => handleLinkClick("user")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <PiUsersThree className="text-2xl mr-3" />
         User Management
       </Link>
 
@@ -50,7 +56,7 @@ const Sidebar = () => {
         onClick={() => handleLinkClick("inventory")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <MdOutlineInventory2 className="text-2xl mr-3" />
         Inventory Management
       </Link>
 
@@ -62,7 +68,7 @@ const Sidebar = () => {
         onClick={() => handleLinkClick("live")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <MdOutlineLiveTv className="text-2xl mr-3" />
         Go Live
       </Link>
 
@@ -74,7 +80,7 @@ const Sidebar = () => {
         onClick={() => handleLinkClick("connect")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <LiaHandshake className="text-2xl mr-3" />
         Connect Management
       </Link>
 
@@ -86,7 +92,7 @@ const Sidebar = () => {
         onClick={() => handleLinkClick("activity")}
         style={{ fontSize: "16px" }}
       >
-        <BiSolidDashboard className="text-2xl mr-3" />
+        <IoSettingsOutline className="text-2xl mr-3" />
         Activity Management
       </Link>
     </nav>
