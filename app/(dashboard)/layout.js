@@ -48,7 +48,7 @@ const DashboardLayout = ({ children }) => {
                 <div>|</div>
                 <div>USD</div>
               </div>
-              <div className="flex border border-4 border-black rounded-full p-1 justify-center items-center space-x-1">
+              <div className="flex border-4 border-black rounded-full p-1 justify-center items-center space-x-1">
                 <Image
                   src={"/profile.svg"}
                   width={32}

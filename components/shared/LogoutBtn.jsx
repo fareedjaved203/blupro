@@ -5,6 +5,7 @@ import { IoArrowBack } from "react-icons/io5";
 import toast from "react-hot-toast";
 import { IoIosLogOut } from "react-icons/io";
 import { IoBookOutline } from "react-icons/io5";
+import Link from "next/link";
 
 const LogoutBtn = () => {
   const router = useRouter();
@@ -20,13 +21,16 @@ const LogoutBtn = () => {
         <IoBookOutline className="mr-3 " size={28} />
         Privacy Policy
       </div>
-      <div
-        //   onClick={logout}
-        className="text-[#E40000] flex items-center justify-start cursor-pointer font-bold rounded-md px-4 mt-4"
-      >
-        <IoIosLogOut className="mr-3 " size={28} />
-        Logout
-      </div>
+
+      <Link href={"/auth/login"}>
+        <div
+          //   onClick={logout}
+          className="text-[#E40000] flex items-center justify-start cursor-pointer font-bold rounded-md px-4 mt-4"
+        >
+          <IoIosLogOut className="mr-3 " size={28} />
+          Logout
+        </div>
+      </Link>
     </div>
   );
 };

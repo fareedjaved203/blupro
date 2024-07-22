@@ -95,7 +95,7 @@ const Signup = () => {
         >
           Password
           <Link
-            href="/forget-password"
+            href="/auth/forget-password"
             className="hover:underline"
             style={{
               color: "rgba(0, 0, 0, 1)",
@@ -122,12 +122,14 @@ const Signup = () => {
         />
 
         <div className="w-full mt-4">
-          <BlueBtn title={"Get Started"} />
+          <Link href={"/"}>
+            <BlueBtn title={"Get Started"} />
+          </Link>
 
           <div className="text-center mt-4">
             Already have an account?{" "}
             <b>
-              <Link href={"/login"}>Sign In</Link>
+              <Link href={"/auth/login"}>Sign In</Link>
             </b>
           </div>
 

@@ -63,7 +63,7 @@ const Otp = () => {
           </InputOTP>
         </div>
         <div className="w-full mt-4">
-          <Link href={"/reset-password"}>
+          <Link href={"/auth/reset-password"}>
             <BlueBtn title={"Verify"} />
           </Link>
           <div className="text-center mt-4">

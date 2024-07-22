@@ -88,11 +88,13 @@ const ResetPassword = () => {
         />
 
         <div className="w-full mt-4">
-          <BlueBtn title={"Login"} />
+          <Link href={"/"}>
+            <BlueBtn title={"Login"} />
+          </Link>
           <div className="text-center mt-4">
             Don&#39;t have an account?{" "}
             <b>
-              <Link href={"/signup"}>Register here!</Link>
+              <Link href={"/auth/signup"}>Register here!</Link>
             </b>
           </div>
 

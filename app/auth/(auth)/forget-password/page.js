@@ -66,7 +66,7 @@ const ForgetPassword = () => {
         />
 
         <div className="w-full mt-4">
-          <Link href={"/forget-password/otp"}>
+          <Link href={"/auth/forget-password/otp"}>
             <div className="w-full">
               <BlueBtn title={"Get Otp"} />
             </div>
@@ -74,7 +74,7 @@ const ForgetPassword = () => {
           <div className="text-center mt-4">
             Don&#39;t have an account?{" "}
             <b>
-              <Link href={"/signup"}>Register here!</Link>
+              <Link href={"/auth/signup"}>Register here!</Link>
             </b>
           </div>
 
